@@ -1,12 +1,13 @@
 library("shinythemes")
-title = "REDFIN Agent Dashbboard"
+title = "REDFIN(NewYork) Agent Dashbboard"
 
 shinyUI(fluidPage(
   theme = shinytheme("united"),
   navbarPage(title),
   mainPanel(
     #titlePanel(title,windowTitle = title),
-    plotOutput("Outstanding Property")
+    plotOutput("Outstanding Property"),
+    plotOutput("New Property in Market")
   ),
   sidebarPanel(
     sliderInput(inputId = "bins",

@@ -31,6 +31,9 @@ top5.agent.by.commision <- function(data){
 }
 
 new.property.in.market <- function(data){
+  ##add the interaction: change the days in market
+  extract.data <- data[data$DAYS.IN.MARKET <= 15,]
+  extract.data
   ##ggplot2 code
 }
 

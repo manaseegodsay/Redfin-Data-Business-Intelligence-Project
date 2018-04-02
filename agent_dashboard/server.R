@@ -5,5 +5,7 @@ shinyServer(function(input,output){
   output$`Outstanding Property` <- renderPlot({
     outstanding.property.plot(unsold.data)
   })
-  
+  output$`New Property in Market` <- renderPlot({
+    new.property.in.market(unsold.data)
+  })
 })
