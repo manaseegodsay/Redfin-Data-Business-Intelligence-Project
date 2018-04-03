@@ -7,13 +7,8 @@ shinyUI(fluidPage(
   mainPanel(
     #titlePanel(title,windowTitle = title),
     plotOutput("Outstanding Property"),
-    plotOutput("New Property in Market")
-  ),
-  sidebarPanel(
-    sliderInput(inputId = "bins",
-                label = "Number of bins:",
-                min = 1,
-                max = 50,
-                value = 30)
+    plotOutput("Top5 Agent By Commission"),
+    dataTableOutput("New Property in Market")
   )
+  #sidebarPanel(sliderInput(inputId = "bins", label = "Number of bins:", min = 1, max = 50, value = 30))
 ))
